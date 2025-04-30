@@ -14,38 +14,43 @@ def binarizeImage(img, thresh):
     Given a coloured image and a threshold binarizes the image.
     Values below thresh are set to 0. All other values are set to 255
     """
-    # TODO
+    h, w, _ = img.shape
+    binarized_img = np.zeros((h, w))
 
-    return img
+    for y in range(h):
+        for x in range(w):
+            if (img[y, x] < thresh).all():
+                binarized_img[y, x] = 255
+
+    return binarized_img
 
 def smoothImage(img):    
     """
     Given a coloured image apply a blur on the image, e.g. Gaussian blur
     """
-    # TODO
-    return img
+    blurred_img = cv2.GaussianBlur(img, (99, 99), 0)
+    return blurred_img
 
 def doSomething(img):
     """
     Given a coloured image apply any image manipulation. Be creative!
     """
-    # TODO
-    
+    h, w, _ = img.shape
+    face = img[20:h-20, 40:w-40]
+    img[20:h-20, 40:w-40] = face[::-1,::-1,:]
     return img
-
 
 def processImage(img):
     """
     Given an coloured image applies the implemented smoothing and binarization.
     """
-    # TODO
     img = smoothImage(img)
     img = binarizeImage(img, 125)
     return img
 
 
 if __name__=="__main__":
-    img = cv2.imread("test.jpg")
+    img = cv2.imread("test.png")
     utils.show(img)
     
     img1 = smoothImage(img)
