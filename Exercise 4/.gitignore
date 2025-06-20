@@ -1,0 +1,45 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code config (optional)
+.vscode/
+
+# Environment folders
+env/
+venv/
+.venv/
+
+# Jupyter runtime
+~/.ipython/
+~/.jupyter/
+*.egg-info/
+
+# Output files
+*.log
+*.csv
+*.tsv
+*.h5
+*.hdf5
+*.ckpt
+*.pth
+*.pt
+*.pkl
+
+# Notebook export files
+*.pdf
+*.html
+*.tex
+
+# Optional: ignore data folder
+data/
