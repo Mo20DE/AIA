@@ -1,1 +1,76 @@
-Exercise 4/Miniconda3-latest-MacOSX-arm64.sh
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+*.env
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# PyCharm settings
+.idea/
+
+# Logs and debugging
+*.log
+*.out
+*.err
+
+# PyTorch, TensorFlow, etc.
+*.ckpt
+*.h5
+*.tflite
+*.pth
+*.pt
+*.onnx
+
+# Data files
+*.csv
+*.tsv
+*.xls
+*.xlsx
+*.json
+*.pickle
+*.pkl
+*.npz
+*.npy
+
+# Temporary files
+*.bak
+*.tmp
+*.swp
+
+# Model outputs, figures, media
+outputs/
+runs/
+checkpoints/
+logs/
+figures/
+images/
+media/
+tensorboard/
+
+# Large raw datasets (optional, depends on your structure)
+data/
+datasets/
+
+# Avoid committing experiments
+experiments/
